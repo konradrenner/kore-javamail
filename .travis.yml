@@ -1,0 +1,17 @@
+language: java
+
+env:
+  global:
+   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
+   #   via the "travis encrypt" command using the project repo's public key
+   - secure: "pvAQctDhsMAlblVKurh/nZUU9rEhzhaJjX6QAvad1ailsVQX+5goNDx5MKKu/j2xBBmV2uSVnumXlKh0+qfAHVWSzs+Bm9FHuk5eD9z+7npWixWNUGxpFnyAxBT9EM1AMZeqHl4uEatkGpH/idc5I1R09SZ7fNDVpZq2RrYbjJI="
+
+addons:
+  coverity_scan:
+    project:
+      name: "konradrenner/kore-javamail"
+      description: "<Your project description here>"
+    notification_email: koni.renner@gmail.com
+    build_command_prepend:
+    build_command: mvn  clean install -DskipTests=true -B -V
+    branch_pattern: master
