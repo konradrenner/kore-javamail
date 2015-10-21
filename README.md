@@ -1,31 +1,7 @@
 # kore-javamail
 This is a fork of the java-mail api and javax.activation, which is made "Android ready" (java-mail api and javax.activation uses the java.awt package, which is not available in Android). And this project seems ot be not developed anymore and is not able to load MimeMultipart messages correct: https://code.google.com/p/javamail-android/
 
-Get it via jitpack.io
-```gradle
-repositories {
-	    maven {
-	        url "https://jitpack.io"
-	    }
-	}
-...
-
-compile 'com.github.konradrenner:kore-javamail:[version]'
-```
-or in Maven:
-
-```xml
-<repository>
-	    <id>jitpack.io</id>
-	    <url>https://jitpack.io</url>
-</repository>
-...
-<dependency> 
-	<groupId>com.github.konradrenner</groupId> 
-	<artifactId>kore-javamail</artifactId> 
-	<version>[version]</version> 
-</dependency>
-``` 
+Get it via Bintray:  [ ![Download](https://api.bintray.com/packages/konradrenner/maven/kore-javamail/images/download.svg) ](https://bintray.com/konradrenner/maven/kore-javamail/_latestVersion)
 
 [![Build Status](https://secure.travis-ci.org/konradrenner/kore-javamail.png?branch=master)](http://travis-ci.org/konradrenner/kore-javamail)
 
